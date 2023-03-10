@@ -12,7 +12,7 @@ export class AppComponent {
   btnDisabled = true;
   person = {
   name: 'janeth',
-  age: '30',
+  age: 30,
   avatar:'https://img.freepik.com/foto-gratis/primer-disparo-flor-morada_181624-25863.jpg?w=2000'
 }
 
@@ -23,6 +23,16 @@ toggleButton  () {
 
 increaseAge() {
   this.person.age += 1;
+}
+
+onScroll(event:Event){
+  const element = event.target as HTMLElement;
+  console.log(element.scrollTop);
+}
+
+changeName(event:Event) {
+  const element = event.target as HTMLInputElement;
+  this.person.name = element.value;
 }
 }
 
