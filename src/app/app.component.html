@@ -1,3 +1,13 @@
+<h1>*ngIf</h1>
+<input type="text"required [(ngModel)] ="person.name" />
+<p *ngIf=person.name === "nicolas">Soy nicolas</p>
+<p *ngIf=person.name === "julian">Soy julian</p>
+
+<hr>
+
+
+
+
 <h1>NgModel</h1>
 <p> Nombre {{ person.name }} </p>
 <input type="text"required #nameInput="ngModel" [(ngModel)] ="person.name" />
