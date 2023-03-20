@@ -1,7 +1,39 @@
+<h1>class & style</h1>
+<input type="text"required #nameInput2="ngModel" [(ngModel)] ="person.name" />
+<p class="message-error" [class.invalid]="nameInput2.invalid">
+  El campo es requerido</p>
+<hr>
+
+<h1>*ngSwitch</h1>
+<input type="text"required [(ngModel)] ="person.name" />
+<div [ngSwitch]="person.name">
+
+  <p *ngSwitchCase="'nicolas'">
+    La persona es nicolas
+  </p>
+  <p *ngSwitchCase="'julian'">
+    La persona es julian
+  </p>
+  <p *ngSwitchCase="'camilo'">
+    La persona es camilo
+  </p>
+  <P *ngSwitchDefault> No hace match </P>
+
+</div>
+<!--<p *ngIf="person.name ==='nicolas'">
+  La persona es nicolas
+</p>
+<p *ngIf="person.name ==='julian'">
+  La persona es julian
+</p>
+<p *ngIf="person.name ==='camilo'">
+  La persona es camilo
+</p> -->
+
 <h1>*ngFor objs</h1>
-<div>
+<div class="products--grid">
   <div *ngFor="let product of products ">
-    <img width="250" [src]="product.image" alt="image">
+    <img  [src]="product.image" alt="image">
     <h2>{{product.price}}</h2>
     <p>{{product.name}}</p>
   </div>
@@ -59,4 +91,4 @@
 <h2>{{ 'hola mundo' . repeat(1) }}</h2>
 <p> 3 + 3 = {{3 * 3 + 5}} </p>
 <h3>hola soy {{name}} y tengo {{age}}</h3>
-<img width="300" src={{img}} alt="image">
+<img width="100" src={{img}} alt="image">

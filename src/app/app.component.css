@@ -4,3 +4,17 @@ width: 200px;
 overflow: auto;
 background: rgb(116, 223, 181);
  }
+ .products--grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 15px;
+   div{
+    img{
+      width: 10px;
+      border-radius: 10px;
+    }
+    h2, p {
+      margin: 0;
+    }
+  }
+ }
