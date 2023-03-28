@@ -8,6 +8,7 @@ import {product} from './product.model';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  widthImg = 10;
   name = 'janeth';
   age = 30;
   img = 'https://img.freepik.com/foto-gratis/primer-disparo-flor-morada_181624-25863.jpg?w=2000';
