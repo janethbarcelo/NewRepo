@@ -1,0 +1,20 @@
+body {
+	font-family: Arial, sans-serif;
+  color: rgb(90, 90, 185);
+  background-color:  rgb(192, 192, 228);
+  ba
+}
+.menu-horizontal {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu-horizontal li {
+  margin-right: 20px;
+}
+
+.menu-horizontal li:last-child {
+  margin-right: 0;
+}
